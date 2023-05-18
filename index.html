@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+    <title>Formulario de cadastro</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Formulário para cadadastro</h1>
+            <nav>
+                <ul>
+                    <li><a href="#">Inserir cliente</a></li>
+                    <li><a href="#">Excluir cliente</a></li>
+                    <li><a href="#">Alterar cliente</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <section>
+        <div class="container">
+            <h2> Cadastros: </h2>
+            <form>
+                <div class="form-field">
+                    <label for="nome">Insira o nome completo: </label>
+                    <input name="nome" type="text" id="nome">
+                </div>                
+                <div class="form-field">
+                    <label for="email">Insira seu email: </label>
+                    <input name="email" type="email" id="email">
+                </div>
+                <div class="form-field">
+                    <label for="telefone">Insira seu numero de telefone: </label>
+                    <input name="telefone" type="tel" id="telefone">
+                </div>
+                <div class="form-field">
+                    <label for="cpf">Insira seu CPF: </label>
+                    <input id="cpf" name="cpf" type="text" >
+                </div>
+                <div class="form-field">
+                    <label for="endereco">Insira seu endereco completo:  </label>
+                    <input name="endereco" type="text" id="endereco" >
+                </div>
+                <div class="form-field">
+                    <label for="cep">Insira seu CEP: </label>
+                    <input name="cep" type="text" id="cep">
+                </div>
+                <button type="submit"> Cadastrar </button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" ></script>
+    <script src="./js/jquery.mask.min.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
