@@ -11,4 +11,20 @@ $(document).ready(function(){
         placeholder: '00000 - 000'
     });
 
+    $('form').validate({
+        rules: {
+            cpf: {
+                required: true
+            },
+
+            cep: {
+                required: true
+            }
+        },
+        messages: {
+            cpf: 'Seu CPF é requerido, por gentileza, insira-o',
+            cep: 'Seu CEP é requerido, por gentileza, insira-o'
+        }
+    })
+
 })
